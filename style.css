@@ -20,7 +20,8 @@
     background-repeat: repeat-y;
     width: 49.5vw;
     height: 100vh;
-    background-position: 0%;   
+    background-position: 0%;
+    position:fixed;
 }
 .road-animate{
     animation: moveRoad 2s linear infinite
@@ -32,4 +33,21 @@
     100% {
         background-position-y:100vh;
     }
+}
+.mycar{
+    position:absolute;
+    top:88%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    border: 2px solid white;
+    height: 135px;
+    width: 70px;
+    background-image: url(./images/player.png);
+}
+.enemy{
+    border: 2px solid white;
+    height: 100px;
+    width: 70px;
+    /*background-image: url(./images/police.png);*/
+    background-color: #fff;
 }
